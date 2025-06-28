@@ -1,0 +1,19 @@
+[package]
+name = "pubkey2derived"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+
+[dependencies.rs-pubkey2derived]
+path = "../../.."
+
+[dependencies.hex-literal]
+version = "1.0.0"
+default-features = false
+features = [
+]
