@@ -1,0 +1,81 @@
+[package]
+name = "rs-pubkey2derived"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+
+[dependencies.x25519-dalek]
+version = "2.0.1"
+default-features = false
+features = [
+	"getrandom",
+]
+
+[dependencies.spki]
+version = "0.7.3"
+default-features = false
+features = [
+	"pem",
+]
+
+[dependencies.const-oid]
+version = "0.10.1"
+default-features = false
+features = [
+	"db",
+]
+
+[dependencies.hkdf]
+version = "0.12.4"
+default-features = false
+features = [
+]
+
+[dependencies.sha2]
+version = "0.10.9"
+default-features = false
+features = [
+	"std",
+]
+
+[dependencies.base64]
+version = "0.22.1"
+default-features = false
+features = [
+	"std",
+]
+
+[dependencies.hex]
+version = "0.4.3"
+default-features = false
+features = [
+	"std",
+]
+
+[dependencies.rand_core]
+version = "0.9.3"
+default-features = false
+features = [
+	"os_rng",
+]
+
+[dependencies.rand]
+version = "0.9.1"
+default-features = false
+features = [
+	"thread_rng",
+]
+
+[dependencies.aes-gcm]
+version = "0.10.3"
+default-features = false
+features = [
+	"aes",
+	"alloc",
+	"getrandom",
+]
